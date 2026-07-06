@@ -368,7 +368,6 @@ class QuizEngineScreen(Screen):
                 Clock.unschedule(self.evenement_chrono)
             self.manager.current = "quiz_menu"
 
-
 # --- ÉCRAN À PROPOS ---
 class AboutScreen(CanvasScreen):
     def __init__(self, **kwargs):
@@ -407,5 +406,4 @@ class AboutScreen(CanvasScreen):
         lbl_tech = Label(text="[color=#94A3B8]Développé par :[/color] [b]Sénateur Technologie[/b]", markup=True, font_size=sp(14), halign="left", size_hint_y=None, height=dp(25))
         lbl_tech.bind(size=lambda s, w: setattr(lbl_tech, 'text_size', (w[0], None)))
         
-        lbl_contact = Label(text="[color=#94A3B8]Contact :[/color] +226 67 49 15 20", markup=True, font_size=sp(14), halign="left", size
-      
+        lbl_contact = Label(text="[color=#94A3B8]Contact :[/color] +226 67 49 15 20", markup=True, font_size=sp(14), halign="left", size_
